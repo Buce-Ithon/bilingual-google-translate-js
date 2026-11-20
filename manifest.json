@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Bilingual View for Google Translate",
+  "version": "1.0.0",
+  "description": "在使用 Google 翻译网页时，自动以“原文在上、译文在下”的双语对照形式呈现内容。",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Google 翻译双语对照",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
