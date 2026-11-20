@@ -1,4 +1,4 @@
-![icon](.\icons\icon128.png)
+<img src="icons/icon128.png" width="128" alt="icon">
 
 # Introduction
 
